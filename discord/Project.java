@@ -1,6 +1,4 @@
 /**
-* Class: Student
-* Attributes: Name, GPA
 * Class: Project
 * Attributes: Question, grade
 */

@@ -3,10 +3,8 @@
 * Attributes: Name, GPA
 * Class: Project
 * Attributes: Question, grade
-*/
 
-
-/* Create 5 students and 10 projects for each student
+Create 5 students and 10 projects for each student
 * Assign grades for all projects on 100 points basis
 * Convert the average grade a student into a GPA update.  GPA can be from 0 to 4 only.
 * Display all students with their individual grades, their averages and their final GPA
@@ -31,24 +29,9 @@ public class ProjectWork {
          int projectGrade = tempGrade.nextInt(100) + 1;
          projectArr[i] = new Project(studentProjectQuestions[i], projectGrade);
       }
-      /* setting a bogus GPA first... */
+      /* setting a bogus GPA first... since GPA will be calculated in the student class constructor */
       studentArr[h] = new Student(studentNames[h], 0.0, projectArr);
-      }/*
-   for(int i=0;i<NUM_STUDENTS;i++){
-      System.out.println("Student name: "+ studentArr[i].getName() + ", GPA: " + String.format("%.2f", studentArr[i].getGPA()));
-      System.out.print("Project score pairs: ");
-      for(int j=0;j<NUM_PROJECTS;j++){
-         System.out.print("Question "+(j+1) + " = " + studentArr[i].projectArr[j].grade + ", ");
       }
-      System.out.println("");
-      } */
-   /* TODO:
-      Done - Loop to generate students, named "One", "Two"..."Five"
-      Done - Loop to generate projects, question strings "One", "Two",..."Ten"
-      Done - Create method to convert project score to GPA
-      - Create method to print student attributes
-      Display all students with their individual grades, their averages and their final GPA
-   */
    }
 
 }
